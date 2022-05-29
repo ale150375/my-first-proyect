@@ -9,8 +9,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Roboto:ital,wght@0,400;0,700;1,100;1,300;1,900&display=swap"
       rel="stylesheet"
-    />
+    /> 
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/tablet.css" media="(min-width: 1440px)" />
     <title>Document</title>
   </head>
   <body>
@@ -33,100 +34,104 @@
         </div>
       </div>
     </header>
-    <main>
-    <section class="main-card-container__basic">
-          <div class="card-container__title-basic">
-             <h2>Básico</h2>
-             <h3>Plan individual</h3>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ab?</p>
-          </div>
-          <p class="container-price__basic"> 
-            <span class="price">$50</span> <span class="price-money">USD</span>
-            <span class="price-description">/mensual</span>
-          </p>
-         <div class="main-card-include__basic">
+    <main >
+     <section class="main-container-sliders">
+       <article class="product-card-contanier">
+         <div class="main-card-container__basic">
+             <div class="card-container__title-basic">
+                <h2>Básico</h2>
+                <h3>Plan individual</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ab?</p>
+             </div>
+             <p class="container-price__basic"> 
+               <span class="price">$50</span> <span class="price-money">USD</span>
+               <span class="price-description">/mensual</span>
+             </p>
+            <div class="main-card-include__basic">
+              <h3 class="card-title">¿Qué está incluido?</h3>
+               <div class="check-container">
+                 <form method="post" action="#">
+                     <input type="checkbox" name="c1" id="c1" >
+                     <label for="c1" class="checkbox">Acceso de por vida a los cursos que completes</label>
+                     <input type="checkbox" name="c2" id="c2" >
+                     <label for="c2" class="checkbox">Acceso a todos los cursos</label>
+                     <input type="checkbox" name="c3" id="c3" >
+                     <label for="c3">Acceso a todos los proyectos</label>
+                     <input type="checkbox" name="c4" id="c4" >
+                     <label for="c4">Acceso a Discord</label>
+                 </form>
+               </div>
+   
+               <div class="check-button">
+                <a href="/" class="button-start__basic">Empezar</a>
+               </div>
+           </div>
+         </div>   
+       </article>
+       <article class="product-card-contanier">
+       <div class="main-card-container__pro">
+         <div class="card-container__title-pro">
+           <h2>Pro</h2>
+           <h3>Plan individual</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ab?</p>
+         </div>
+         <p class="container-price__pro"> 
+           <span class="price">$75</span> <span class="price-money">USD</span>
+           <span class="price-description">/mensual</span>
+         </p>
+         <div class="main-card-include__pro">
            <h3 class="card-title">¿Qué está incluido?</h3>
-            <div class="check-container">
-              <form method="post" action="#">
-                  <input type="checkbox" name="c1" id="c1" >
-                  <label for="c1" class="checkbox">Acceso de por vida a los cursos que completes</label>
-                  <input type="checkbox" name="c2" id="c2" >
-                  <label for="c2" class="checkbox">Acceso a todos los cursos</label>
-                  <input type="checkbox" name="c3" id="c3" >
-                  <label for="c3">Acceso a todos los proyectos</label>
-                  <input type="checkbox" name="c4" id="c4" >
-                  <label for="c4">Acceso a Discord</label>
-              </form>
-            </div>
+           <div class="check-container">
+             <form method="post" action="#">
+                 <input type="checkbox" name="c1" id="c1" >
+                 <label for="c1" class="checkbox">Acceso de por vida a los cursos que completes</label>
+                 <input type="checkbox" name="c2" id="c2" >
+                 <label for="c2" class="checkbox">Acceso a todos los cursos</label>
+                 <input type="checkbox" name="c3" id="c3" >
+                 <label for="c3">Acceso a todos los proyectos</label>
+                 <input type="checkbox" name="c4" id="c4" >
+                 <label for="c4">Acceso a Discord</label>
+             </form>
+           </div>
+           <div class="check-button">
+             <a href="/" class="button-start__pro">Empezar</a>
+           </div>
+         </div>
+       </div>
+       </article>
+       <article class="product-card-contanier">
+         <div class="main-card-container__enterprice">
+           <div class="card-container__title-enterprice">
+             <h2>Empresas</h2>
+             <h3>Plan para 5 miembros</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ab?</p>
+           </div>
+           <p class="container-price__enterprice"> 
+             <span class="price">$99</span> <span class="price-money">USD</span>
+             <span class="price-description">/mensual</span>
+           </p>
+           <div class="main-card-include__enterprice">
+             <h3 class="card-title">¿Qué está incluido?</h3>
+             <div class="check-container">
+               <form method="post" action="#">
+                   <input type="checkbox" name="c1" id="c1" >
+                   <label for="c1" class="checkbox">Acceso de por vida a los cursos que completes</label>
+                   <input type="checkbox" name="c2" id="c2" >
+                   <label for="c2" class="checkbox">Acceso a todos los cursos</label>
+                   <input type="checkbox" name="c3" id="c3" >
+                   <label for="c3">Acceso a todos los proyectos</label>
+                   <input type="checkbox" name="c4" id="c4" >
+                   <label for="c4">Acceso a Discord</label>
+               </form>
+             </div>
+             <div class="check-button">
+               <a href="/" class="button-start__enterprice">Empezar</a>
+             </div>
+           </div>
+         </div>
+       </article>
 
-            <div class="check-button">
-             <a href="/" class="button-start__basic">Empezar</a>
-            </div>
-        </div>
-    </section>   
-      
-    <section>
-      <div class="main-card-container__pro">
-        <div class="card-container__title-pro">
-          <h2>Pro</h2>
-          <h3>Plan individual</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ab?</p>
-        </div>
-        <p class="container-price__pro"> 
-          <span class="price">$75</span> <span class="price-money">USD</span>
-          <span class="price-description">/mensual</span>
-        </p>
-        <div class="main-card-include__pro">
-          <h3 class="card-title">¿Qué está incluido?</h3>
-          <div class="check-container">
-            <form method="post" action="#">
-                <input type="checkbox" name="c1" id="c1" >
-                <label for="c1" class="checkbox">Acceso de por vida a los cursos que completes</label>
-                <input type="checkbox" name="c2" id="c2" >
-                <label for="c2" class="checkbox">Acceso a todos los cursos</label>
-                <input type="checkbox" name="c3" id="c3" >
-                <label for="c3">Acceso a todos los proyectos</label>
-                <input type="checkbox" name="c4" id="c4" >
-                <label for="c4">Acceso a Discord</label>
-            </form>
-          </div>
-          <div class="check-button">
-            <a href="/" class="button-start__pro">Empezar</a>
-          </div>
-        </div>
-      </div>
-    </section>
-      <section>
-        <div class="main-card-container__enterprice">
-          <div class="card-container__title-enterprice">
-            <h2>Empresas</h2>
-            <h3>Plan para 5 miembros</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ab?</p>
-          </div>
-          <p class="container-price__enterprice"> 
-            <span class="price">$99</span> <span class="price-money">USD</span>
-            <span class="price-description">/mensual</span>
-          </p>
-          <div class="main-card-include__enterprice">
-            <h3 class="card-title">¿Qué está incluido?</h3>
-            <div class="check-container">
-              <form method="post" action="#">
-                  <input type="checkbox" name="c1" id="c1" >
-                  <label for="c1" class="checkbox">Acceso de por vida a los cursos que completes</label>
-                  <input type="checkbox" name="c2" id="c2" >
-                  <label for="c2" class="checkbox">Acceso a todos los cursos</label>
-                  <input type="checkbox" name="c3" id="c3" >
-                  <label for="c3">Acceso a todos los proyectos</label>
-                  <input type="checkbox" name="c4" id="c4" >
-                  <label for="c4">Acceso a Discord</label>
-              </form>
-            </div>
-            <div class="check-button">
-              <a href="/" class="button-start__enterprice">Empezar</a>
-            </div>
-          </div>
-        </div>
-      </section>
+     </section>
     </main>
   </body>
 </html>

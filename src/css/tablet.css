@@ -1,0 +1,10 @@
+
+.main-container-sliders {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1440px;
+        margin: 0 auto;
+}
+product-card-container {
+    justify-content: space-evenly;
+}

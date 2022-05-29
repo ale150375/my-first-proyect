@@ -93,9 +93,9 @@ header .header-icon {
 }
 main {
     width: 100%;
-    height: 100vh;
-    background-color: var(--color-bg);
 }
+
+
 .main-card-container__basic, .main-card-container__enterprice {
     width: 90%;
     min-width: 288px;
@@ -106,6 +106,17 @@ main {
     border: 1px solid var(--color-border);
     border-radius: 24px;
     background-color: var(--color-card-background);
+}
+.main-card-container__pro {
+    width: 90%;
+    min-width: 288px;
+    max-width: 450px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-purple-dark);
+    border-radius: 24px;
+    background-color: var(--color-purple-light);
 }
 .card-container__title-basic h2, .card-container__title-pro h2, .card-container__title-enterprice h2 {
     margin-top: 20px;
@@ -269,15 +280,4 @@ input[type=checkbox] + label {
     color: var(--color-white);
     text-decoration: none;
     text-align: center;
-}
-.main-card-container__pro {
-    width: 90%;
-    min-width: 288px;
-    max-width: 450px;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--color-purple-dark);
-    border-radius: 24px;
-    background-color: var(--color-purple-light);
 }
