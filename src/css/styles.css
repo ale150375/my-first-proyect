@@ -1,0 +1,215 @@
+:root {
+    --color-bg: #242629;
+    --color-white: #FFFFFE;
+    --color-border: #EFF0F6;
+    --color-background: #16161A;
+    --color-purple-light: #B69EFF;
+    --color-purple-dark: #7F5AF0;
+    --color-grey: #94A1B2;
+    --color-blue-dark: #0E172C;
+    --color-card-background: #16161A;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+body {
+    background-color: var(--color-bg);
+}
+header {
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-bg);
+}
+header h3 {
+    margin-top: 40px;
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: var(--color-purple-light);
+}
+header h1 {
+    width: 70%;
+    min-width: 288px;
+    max-width: 576px;
+    height: 117px;
+    margin: 10px auto;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+header .header-paragraph {
+    margin: 10px auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 100;
+    color: var(--color-grey);
+}
+header .header-button-container {
+    width: 229px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+header .header-button-container p {
+    margin: 20px auto;
+    padding: 0 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: var(--color-white);
+}
+header .header-button-container a {
+    margin-top: 10px;
+}
+header .header-icon {
+    margin-top: 3rem;
+    width:75px;
+    height: 33px;
+    background-image: url('../assets/switch.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-bg);
+}
+.main-card-container__basic {
+    width: 90%;
+    min-width: 288px;
+    max-width: 450px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-border);
+    border-radius: 24px;
+    background-color: var(--color-card-background);
+}
+.main-card-container__basic h2 {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+.main-card-container__basic h3 {
+    margin-left: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    color: var(--color-grey);
+}
+.main-card-container__basic .card-container__title p {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    color: var(--color-grey);
+}
+.main-card-container__basic .container-price .price {
+    margin-left: 10px;
+    width: 102px;
+    height: 39px;
+    font-family: 'Inter', sans-serif;
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+.main-card-container__basic .container-price .price-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+    color: var(--color-grey);
+}
+.main-card-container__basic .container-price .price-money {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+.main-card-include {
+    margin-left: 10px;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    color: var(--color-white);
+}
+.main-card-include .card-title {
+    margin-left: -10px;
+    padding: 10px 0;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    color: var(--color-white);
+}
+.main-card-include .check-container ul li {
+    list-style: none;
+}
+.main-card-include .check-container .check-container__item {
+    margin-left: 10px;
+    padding: 20px 0;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    color: var(--color-white);
+    text-align: center;
+}
+input[type=checkbox] {
+    display: none;
+}
+.check-container label {
+    display: inline-block;
+}
+input[type=checkbox] + label {
+    background: url('../assets/check-circle.svg') no-repeat left center;
+    background-size: 26px 26px;
+    padding: 4px 0 4px 40px;
+}
+.check-button {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.button-start {
+    width: 318px;
+    height:72px;
+    padding: 20px;
+    border: 1px solid var(--color-purple-dark);
+    background-color: var(--color-purple-dark);
+    border-radius: 96px;
+    color: var(--color-white);
+    text-decoration: none;
+    text-align: center;
+}
+
