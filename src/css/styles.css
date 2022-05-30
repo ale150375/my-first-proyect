@@ -81,16 +81,17 @@ header .header-button-container p {
 header .header-button-container a {
     margin-top: 10px;
 }
-header .header-icon {
-    margin-top: 3rem;
-    width:75px;
-    height: 33px;
-    background-image: url('../assets/switch.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 
+
+header .header-button-container input[type=checkbox] {
+    display: none;
 }
+header .header-button-container input[checkbox] + label {
+    width: 100%;
+    display: block;
+    background: url('../assets/switchoff.svg') no-repeat center center;
+}
+
 main {
     width: 100%;
 }
@@ -101,6 +102,7 @@ main {
     min-width: 288px;
     max-width: 450px;
     margin: 40px auto;
+    padding: 2.4rem;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--color-border);
@@ -112,6 +114,7 @@ main {
     min-width: 288px;
     max-width: 450px;
     margin: 40px auto;
+    padding: 2.4rem;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--color-purple-dark);
@@ -249,11 +252,23 @@ input[type=checkbox] {
 .check-container label {
     display: inline-block;
 }
+
 input[type=checkbox] + label {
     background: url('../assets/check-circle.svg') no-repeat left center;
     background-size: 26px 26px;
     padding: 4px 0 4px 40px;
 }
+
+.form-container1 label:first-of-type{
+    opacity: 0.2;
+}
+.form-container1 :nth-child(4){
+    opacity: 0.2;
+}
+.form-container2 :nth-child(2){
+    opacity: 0.2;
+}
+
 .check-button {
     margin-top: 50px;
     display: flex;
