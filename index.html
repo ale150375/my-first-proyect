@@ -28,11 +28,12 @@
         </p>
         <div class="header-button-container">
             <p>Mensual</p>
-            <a  href="/" class="header-icon">
-              <input type="checkbox" id="h1" name="h1">
-              <label for="h1"></label>
-            </a>
-            <button id="switch"  href="/" class="header-switch">switch</button>
+            <div class="header-button-switch">
+                <button id="switch"  href="/" class="headerswitch" onclick="AnimatedToggleSwitch()">
+                <div class="header-switch-on">
+                </div>
+            </div>
+            </button>
             <p>Anualmente(-40%)</p>
         </div>
       </div>
@@ -110,17 +111,17 @@
        </div>
        </article>
        <article class="product-card-contanier">
-         <div class="main-card-container__enterprice">
-           <div class="card-container__title-enterprice">
+         <div class="main-card-container__enterprise">
+           <div class="card-container__title-enterprise">
              <h2>Empresas</h2>
              <h3>Plan para 5 miembros</h3>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ab?</p>
            </div>
-           <p class="container-price__enterprice"> 
+           <p class="container-price__enterprise"> 
              <span class="price">$99</span> <span class="price-money">USD</span>
              <span class="price-description">/mensual</span>
            </p>
-           <div class="main-card-include__enterprice">
+           <div class="main-card-include__enterprise">
              <h3 class="card-title">¿Qué está incluido?</h3>
              <div class="check-container">
                <form method="post" action="#">
@@ -135,7 +136,7 @@
                </form>
              </div>
              <div class="check-button">
-               <a href="/" class="button-start__enterprice">Empezar</a>
+               <a href="/" class="button-start__enterprise">Empezar</a>
              </div>
            </div>
          </div>
